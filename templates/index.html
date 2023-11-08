@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <title>칠면조 페이지</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--    <link href="profile.css" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>TK</title>
+
+<link rel="stylesheet" type="text/css" href="../static/profile.css" />
+</head>
+
+<!--<style>-->
+<!--            *{-->
+<!--            font-family: 'Noto Sans KR', sans-serif;-->
+<!--        }-->
+
+<!--    @keyframes box-ani {-->
+<!--        from {-->
+<!--            transform: translate(0px, -600px);-->
+<!--        }-->
+<!--        to {-->
+<!--            transform: translate(0px, 1000px);-->
+<!--        }-->
+<!--    }-->
+
+<!--    .box1 {-->
+<!--        display: flex;-->
+<!--        align-items: center;-->
+<!--        justify-content: center;-->
+<!--        width: 100px;-->
+<!--        height: 100px;-->
+<!--        animation-fill-mode: revert;-->
+
+
+<!--        animation: box-ani 1s linear forwards; /* 애니메이션 적용 */-->
+<!--    }-->
+
+
+<!--    @keyframes box-ani2 {-->
+<!--        from {-->
+<!--            transform: translate(-1000px, -300px);-->
+<!--        }-->
+<!--        to {-->
+<!--            transform: translate(-1000px, 5000px);-->
+<!--        }-->
+<!--    }-->
+
+<!--    .box2 {-->
+<!--        display: flex;-->
+<!--        align-items: center;-->
+<!--        justify-content: center;-->
+<!--        width: 200px;-->
+<!--        height: 200px;-->
+<!--        rotate: 180deg;-->
+<!--        animation-delay: 2s;-->
+
+
+
+<!--        animation: box-ani2 3s linear forwards; /* 애니메이션 적용 */-->
+<!--    }-->
+
+<!--    /*@keyframes box-ani3 {*/-->
+
+<!--    /*    from {*/-->
+<!--    /*        transform: translate(0px, -2000px);*/-->
+<!--    /*    }*/-->
+<!--    /*    to {*/-->
+<!--    /*        transform: translate(0px, 0px);*/-->
+<!--    /*    }*/-->
+<!--    /*}*/-->
+
+<!--    /*.box3 {*/-->
+<!--    /*    display: flex;*/-->
+<!--    /*    align-items: center;*/-->
+<!--    /*    justify-content: center;*/-->
+<!--    /*    width: 200px;*/-->
+<!--    /*    height: 200px;*/-->
+<!--    /*    rotate: 90deg;*/-->
+
+
+
+
+<!--    /*    animation: box-ani3 2s linear forwards; !* 애니메이션 적용 *!*/-->
+<!--    /*}*/-->
+
+
+<!--    header {-->
+<!--        background: #2980b9;-->
+<!--    }-->
+
+<!--    header a {-->
+<!--        color: white;-->
+<!--        font-size: 18px;-->
+<!--    }-->
+
+<!--    header a:hover,-->
+<!--    header a:focus {-->
+<!--        background: white;-->
+<!--        color: black;-->
+<!--    }-->
+
+<!--    .banner {-->
+<!--        background: #2E86C1;-->
+<!--        text-align: center;-->
+<!--        color: white;-->
+<!--        padding-top: 140px;-->
+<!--        padding-bottom: 140px;-->
+
+
+<!--    }-->
+
+<!--    /*이 아래부터는 수정영역입니다. 이상환*/-->
+
+
+<!--    .team-style {-->
+<!--        /*height: 600px;*/-->
+<!--        /*width: 600px;*/-->
+<!--    }-->
+
+<!--    .member_list {-->
+<!--        /*멤버 리스트 정렬*/-->
+<!--        display: flex;-->
+<!--        flex-direction: row;-->
+<!--        align-items: center;-->
+<!--        margin-bottom: 50px;-->
+<!--    }-->
+
+<!--    .member_post {-->
+<!--        min-width: 200px;-->
+<!--        padding: 10px;-->
+<!--        margin: 20px auto 20px auto;-->
+<!--        border: 2px solid #2980b9;-->
+<!--        border-radius: 20px;-->
+<!--    }-->
+
+<!--    .member_post:hover {-->
+<!--        border: 5px solid #2980b9;-->
+<!--    }-->
+
+<!--    .member_post > img {-->
+<!--        width: 150px;-->
+<!--        height: 200px;-->
+<!--    }-->
+
+<!--    .comment {-->
+<!--        background-color: white;-->
+<!--        margin: 20px auto 20px auto;-->
+<!--        border: 2px solid #2980b9;-->
+<!--        border-radius: 20px;-->
+
+<!--        width: 150px;-->
+<!--        height: 100px;-->
+
+<!--        display: revert;-->
+<!--        flex-direction: column;-->
+<!--    }-->
+
+<!--    .comment:hover {-->
+<!--        border: 5px solid #2980b9;-->
+<!--    }-->
+
+<!--    .comment > img {-->
+<!--        width: 50px;-->
+<!--        height: 50px;-->
+
+<!--    }-->
+
+<!--    .mains{-->
+
+
+<!--        font-size: 200px;-->
+
+<!--        color: black;-->
+<!--        text-decoration: none;-->
+<!--        align-content: center;-->
+
+
+<!--    }-->
+
+<!--    .mains:hover{-->
+
+<!--        color: red;-->
+
+<!--    }-->
+
+
+<!--</style>-->
+
+<script>
+
+    $(document).ready(function () {
+
+        $('#boxid3').hide()
+        setTimeout(shundown, 1000)
+        setTimeout(bird2,1000)
+        setTimeout(tk,1000)
+
+
+    });
+
+    function shundown() {
+
+        $('#boxid').hide()
+
+    }
+
+    function bird2(){
+
+        $('#boxid2').hide()
+
+    }
+
+    function tk(){
+
+    $('#boxid3').show();
+
+    }
+
+
+
+</script>
+
+
+<body>
+<header>
+    <nav class="navbar navbar-expand">
+        <div class="container" id="home">
+            <div class="navbar-header">
+                <a class="navbar-brand"><img
+                        src="https://velog.velcdn.com/images/rianbowgift/post/37a8c814-3cc9-4651-b2ae-bf37bac5c785/image.webp"
+                        style="height: 60px; width: 60px; transform: rotate(45deg);"> 칠면조</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item"><a href="#home" class="navbar-brand">Home</a></li>
+                <li class="nav-item"><a href="#tktk" class="navbar-brand">칠면조?</a></li>
+                <li class="nav-item"><a href="#teams" class="navbar-brand">조원 소개</a></li>
+                <!--                    <li class="nav-item"><a href="#portfolio" class="nav-link">조원 소개</a></li>-->
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="banner">
+    <div class="container" style="height: 600px">
+        <a class="navbar-brand">
+            <img src="https://velog.velcdn.com/images/rianbowgift/post/f95ac419-2d01-4f71-8595-665ba95f1fe8/image.webp"
+                 style="height: 600px; width: 600px;transform: rotate(180deg);  " class="box1" id="boxid"></a>
+        <a><img src="https://velog.velcdn.com/images/rianbowgift/post/22f543ac-fc5d-4c92-9a08-0bfc3e0a29cd/image.webp"
+             style="height: 600px; width: 600px;  " class="box2" id="boxid2"> </a>
+        <a><img src="https://velog.velcdn.com/images/rianbowgift/post/abb9765e-a27f-4464-9160-f085f9c98df1/image.webp"
+             style="height: 600px; width: 600px;   " class="box3" id="boxid3"></a>
+        <a class="mains" id="mains">칠면조</a>
+
+    </div>
+</div>
+<div class="container pt-3 text-center" id="tktk">
+    <br>
+    <br>
+    <a class="navbar-brand"><img
+            src="https://velog.velcdn.com/images/rianbowgift/post/8c630cf2-3f3a-422c-9a5f-cce6cbef37cc/image.webp"
+            style="height: 600px; width: 600px;"></a>
+        <br><br>
+    <h3>코드의 90%는 개발 시간의 90%를 설명해준다. </h3>
+    <br>
+    <h3>나머지 10%는 그 시간에 일어났던 다른 일의  90%를 설명해준다.</h3>
+    <br>
+    <h1>Tom Cargill, 벨연구소 수석 개발자 </h1>
+
+
+        <br>
+
+
+</div>
+
+
+<!--이 아래부터는 수정영역입니다. 이상환-->
+
+<div class="container pt-3 text-center team-style" id="teams">
+    <br><br>
+    <h1>팀원</h1>
+    <div class="member_list">
+        <div class="member_post" onclick="location.href='/song'">
+            <img class="img-fluid"
+                 src="https://velog.velcdn.com/images/rianbowgift/post/60087b32-6fbc-4ba8-ac17-43bada57ea96/image.png">
+            <h4>송경헌</h4>
+        </div>
+
+        <div class="member_post" onclick="location.href='/jung'">
+            <img class="img-fluid"
+                 src="https://velog.velcdn.com/images/rianbowgift/post/4a28a781-85b3-42e7-b48c-629a3bbc9d4d/image.png">
+            <h4>정의준</h4>
+        </div>
+
+        <div class="member_post" onclick="location.href='/jo'">
+            <img class="img-fluid"
+
+                 src="https://velog.velcdn.com/images/rianbowgift/post/8c7f84cd-883b-49c3-8197-d5c74d5f11a7/image.png">
+            <h4>조은총</h4>
+        </div>
+
+        <div class="member_post" onclick="location.href='/jin'">
+            <img class="img-fluid"
+                 src="https://velog.velcdn.com/images/rianbowgift/post/c644b441-c2f3-4b25-b8cc-bdfbc2b9daa8/image.png">
+            <h4>예진선</h4>
+        </div>
+
+        <div class="member_post" onclick="location.href='/sang'">
+            <img class="img-fluid"
+                 src="https://velog.velcdn.com/images/rianbowgift/post/07ba70f8-05b8-404a-ab3c-e7a70f4d3cee/image.png">
+            <h4>이상환</h4>
+        </div>
+
+    </div>
+
+
+    <div class="comment" onclick="location.href='/comment'">
+        <img src="https://mobiinsidecontent.s3.ap-northeast-2.amazonaws.com/kr/wp-content/uploads/2020/05/07171045/GettyImages-1166804949-scaled.jpg">
+        <h5>응원남기기</h5>
+    </div>
+
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+<header>
+    <nav class="navbar navbar-expand">
+        <div class="container" id="home2">
+            <div class="navbar-header">
+                <a class="navbar-brand"><img
+                        src="https://velog.velcdn.com/images/rianbowgift/post/37a8c814-3cc9-4651-b2ae-bf37bac5c785/image.webp"
+                        style="height: 60px; width: 60px; transform: rotate(45deg);"> 칠면조</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item"><a href="#home" class="navbar-brand">Home</a></li>
+                <li class="nav-item"><a href="#tktk" class="navbar-brand">칠면조?</a></li>
+                <li class="nav-item"><a href="#teams" class="navbar-brand">조원 소개</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    </header>
+</body>
+
+</html>

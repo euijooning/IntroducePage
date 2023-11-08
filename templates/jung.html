@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <title>Member: 정의준</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+     body{
+         background-color: #EFE7E3;
+     }
+     .myname {
+         margin-top: 10px;
+         text-align: center;
+         font-family: 'Poor Story', cursive;
+         font-weight: bold;
+     }
+
+    .myproflie_section {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: flex-start;
+         margin: 100px;
+
+     }
+
+     #mypicture {
+         width: 450px;
+         margin-right: 60px;
+         border-radius: 30px;
+     }
+
+     .temperature{
+         text-align: center;
+         font-family: 'Poor Story', cursive;
+     }
+
+     .introduction {
+         font-family: 'Noto Sans KR', sans-serif;
+     }
+
+     .introduction>h2{
+         margin:0px;
+         font-family: 'Jua', sans-serif;
+         font-size: 35px;
+     }
+     .introduction>p {
+         font-family: 'Poor Story', cursive;
+         font-size: 18px;
+     }
+
+</style>
+<script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/sparta_api/weather/seoul",
+                data: {},
+                success: function (response) {
+                    let temp = response['temp']
+                    $('#temp').text(temp)
+                }
+            })
+        });
+</script>
+</head>
+
+<body>
+
+<div class="myproflie_section" id = "post_box">
+    <div>
+        <img id="mypicture" src="https://velog.velcdn.com/images/rianbowgift/post/f4e3cb06-b06b-4478-8645-c808fdff5be2/image.jpg">
+        <div class="myname">
+            이름 : 정의준 / 소속 : A-7조(팀장) / 나이 : 27세 <br>
+            <a href="https://ejwaytogo.tistory.com/"><img src="https://velog.velcdn.com/images/rianbowgift/post/9624f8d4-1d95-442b-a12f-45876bfb618d/image.png" alt="블로그"> </a>
+        </div>
+        <div class="temperature">
+            <p>현재기온: <span id="temp">00.0</span>도</p>
+
+            <input type="button" value="Night" onclick="
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';">
+            <input type="button" value="Daytime" onclick="
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';">
+        </div>
+
+    </div>
+
+
+    <div class = "introduction">
+        <h1>제 소개를 하자면요!!!</h1>
+            <h2>(거의) 확신의 INFJ</h2>
+            <p>제 MBTI는 "INFJ"입니다.<br>
+                계획을 세우면 신기하게도 마음이 편해지고, 기분까지 좋아졌거든요.<br>
+                계획형 인간이었기 때문에,<br>
+                개인적인 생활 뿐만 아니라 팀프로젝트에서도 많은 도움을 주고받을 수 있었어요.<br>
+                그런데 요즘은 일부러 계획에서 조금은 자유로운 삶을 살아보려고 노력중입니다.<br><br>
+                저는 극강의 I인데요.<br>
+                감사하게도 "만들어진 사회성"이 아주 예쁘게 자리잡았는진 모르겠습니다만,<br>
+                요즘은 처음 뵙는 분들 중에 저를 E로 생각하시는 경우가 종종 있습니다.<br>
+                솔직히 조금 뿌듯하답니다!!
+            </p><br>
+            <h2>"협업 스타일"</h2>
+            <p>"(나대지는 말되) 희망자가 없다면 나라도 하자"<br>
+                이게 제 협업 마인드입니다. 궂은 일을 맡는 게 필요하다면 오히려 직면합니다.<br><br>
+                때때로 겁이 좀 나기도 하지만, 지나고 보면 한 뼘 성장한 것이 보이기 때문입니다.<br>
+                더불어, 최대한 팀 구성원들의 생각을 존중하며 만인의 의견을 이끌어 모으는 게<br>
+                제가 추구하는 이상적인 협업 과정입니다.
+            </p>
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

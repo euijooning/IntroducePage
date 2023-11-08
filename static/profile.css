@@ -1,0 +1,174 @@
+
+            *{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+    @keyframes box-ani {
+        from {
+            transform: translate(0px, -600px);
+        }
+        to {
+            transform: translate(0px, 1000px);
+        }
+    }
+
+    .box1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        animation-fill-mode: revert;
+
+
+        animation: box-ani 1s linear forwards; /* 애니메이션 적용 */
+    }
+
+
+    @keyframes box-ani2 {
+        from {
+            transform: translate(-1000px, -300px);
+        }
+        to {
+            transform: translate(-1000px, 5000px);
+        }
+    }
+
+    .box2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        rotate: 180deg;
+        animation-delay: 2s;
+
+
+
+        animation: box-ani2 3s linear forwards; /* 애니메이션 적용 */
+    }
+
+    /*@keyframes box-ani3 {*/
+
+    /*    from {*/
+    /*        transform: translate(0px, -2000px);*/
+    /*    }*/
+    /*    to {*/
+    /*        transform: translate(0px, 0px);*/
+    /*    }*/
+    /*}*/
+
+    /*.box3 {*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*    width: 200px;*/
+    /*    height: 200px;*/
+    /*    rotate: 90deg;*/
+
+
+
+
+    /*    animation: box-ani3 2s linear forwards; !* 애니메이션 적용 *!*/
+    /*}*/
+
+
+    header {
+        background: #2980b9;
+    }
+
+    header a {
+        color: white;
+        font-size: 18px;
+    }
+
+    header a:hover,
+    header a:focus {
+        background: white;
+        color: black;
+    }
+
+    .banner {
+        background: #2E86C1;
+        text-align: center;
+        color: white;
+        padding-top: 140px;
+        padding-bottom: 140px;
+
+
+    }
+
+    /*이 아래부터는 수정영역입니다. 이상환*/
+
+
+    .team-style {
+        /*height: 600px;*/
+        /*width: 600px;*/
+    }
+
+    .member_list {
+        /*멤버 리스트 정렬*/
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .member_post {
+        min-width: 200px;
+        padding: 10px;
+        margin: 20px auto 20px auto;
+        border: 2px solid #2980b9;
+        border-radius: 20px;
+    }
+
+    .member_post:hover {
+        border: 5px solid #2980b9;
+    }
+
+    .member_post > img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .comment {
+        background-color: white;
+        margin: 20px auto 20px auto;
+        border: 2px solid #2980b9;
+        border-radius: 20px;
+
+        width: 150px;
+        height: 100px;
+
+        display: revert;
+        flex-direction: column;
+    }
+
+    .comment:hover {
+        border: 5px solid #2980b9;
+    }
+
+    .comment > img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .mains{
+
+
+        font-size: 200px;
+
+        color: black;
+        text-decoration: none;
+        align-content: center;
+
+
+    }
+
+    .mains:hover{
+
+        color: red;
+
+    }
+

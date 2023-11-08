@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <meta charset="UTF-8">
+
+    <title>이상환 소개 페이지</title>
+
+     <link rel="stylesheet" type="text/css" href="..\static\SangHwan.css" >
+    <!--    <link rel="stylesheet" href="{{ url_for('static', filename='/SangHwan.css') }}">-->
+
+    <script src="..\static\SangHwan.js"></script>
+
+</head>
+<body>
+
+
+<div class="mycover"></div>
+
+<div class="mypost">
+    <div class="myImage"></div>
+
+    <div class="mytext"><h2>소개</h2>
+        <p>이름 : 이상환</p>
+        <p>나이 : 28살</p>
+        <p>블로그 : <a href="https://sanghwan.tistory.com/">https://sanghwan.tistory.com</a></p>
+        <p>MBTI : INFP</p>
+        <p>취미 : 게임</p>
+        <p>좋아하는 것 : 유튜브, 애완동물, 다이소</p>
+    </div>
+    <div class="mytext">
+        <p>자신의 장점 : 무언가 일을 할때, 상대방의 입장을 생각해보고 의견을 묻고 중립적으로 생각하는 것이 나의 장점이라고 생각합니다. </p>
+        <p>협업 스타일 : 궁금한것은 이것저것 물어보고 , 다같이 소외되는 사람없이 프로젝트를 진행하려는 스타일입니다. </a></p>
+        <p>간단한 나의 소개 : 안녕하세요 28살의 인천에서 거주하고 있는 이상환이라고합니다.
+            웹을 공부하고 싶어서 공부를 시작하게되었습니다. 왕초보입니다 잘부탁드리겠습니다.</p>
+    </div>
+</div>
+
+
+<div class="cardss">
+    <h2>일상 기록</h2>
+
+    <div class="add_post" id="add-box">
+        <div class="form-floating mb-3">
+            <input id="url" type="email" class="form-control" placeholder="name@example.com">
+            <label>이미지 URL</label>
+        </div>
+
+        <textarea id="comment_title" class="form-control" placeholder="Title"></textarea>
+
+        <textarea id="comment" class="form-control" placeholder="Text"></textarea>
+        <label for="floatingTextarea2">추가 입력내용</label>
+        <div class="mybtns">
+            <button onclick="posting()" type="button" class="btn btn-dark">기록하기</button>
+            <button onclick="close_box()" type="button" class="btn btn-light">닫기</button>
+        </div>
+    </div>
+    <div class="addbtn">
+        <button onclick="open_box()" id="add-button" type="button" class="btn btn-primary btn-lg btn-block">추가 입력하기
+        </button>
+    </div>
+    <div class="cards_boxs" id="cards-box">
+
+        <!--        <div class="cards">-->
+        <!--            <img src="../static/베트남한국식중국집.png" class="card-img-top">-->
+        <!--            <div class="mycard_text">-->
+        <!--                <h2 class="card-title">베트남 여행 음식점 1</h2>-->
+        <!--                <p class="card-text">베트남에서 한국인 요리사분이 운영하는 중국집의 깐풍기로 우리나라에서보다 향신료가 강하다!</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+    </div>
+
+    <button class="homebutton" type="button" class="btn btn-secondary"
+            onclick="location.href='/index'">홈으로
+    </button>
+</div>
+
+
+</body>
+</html>
+
+<!--    <button value="Index" name="index" onclick="location.href='http://localhost:5000/index'">test</button></p>-->
+<!--    <button value="Index" name="index" onclick="location.href='http://localhost:5000/Sang'">test</button></p>-->
+

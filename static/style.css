@@ -1,0 +1,109 @@
+
+body{
+    background-image: url('https://img.freepik.com/free-vector/simple-gradient-background-vector-winter-blue-pink_53876-105768.jpg?w=2000');
+    background-position: center;
+    background-size: cover;
+
+}
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+.navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.site-name {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 100px 100px;
+}
+#profile-picture{
+    width: 300px;
+    margin-right: 60px;
+}
+.introduction>h2{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+.introduction>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.value-menu{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    margin: 30px 100px;
+}
+.value-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 100px 150px;
+    margin-top: 20px;
+}
+.value{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+    font-size: 40px;
+}
+.value-icon{
+    width: 250px;
+    height: 250px;
+    border: 2px solid #C2B4AB;
+    border-radius: 100px;
+    padding: 15px;
+}
+.value-intro{
+    margin-left: 30px;
+}
+.value-name{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700px;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.value-exp{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+}
+.links>a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 15px;
+}

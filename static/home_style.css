@@ -1,0 +1,85 @@
+body, ul, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+body {
+    background-color: #111;
+    color: #999;
+}
+.wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-item{
+    flex-basis: 100px;
+    size-shrink:0;
+    margin: 0 10px;
+    transition: all .4s;
+}
+.team-item:hover {
+    flex-basis: 140px;
+    margin: 0 20px;
+}
+.team-item img {
+     width: 100%;
+}
+
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+.profile:before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 140px;
+}
+
+.profile_beige {
+    color: black;
+}
+.proflie_gray {
+    color: beige;
+}
+.profile-contents {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+
+}
+.profile-contents h2 {
+    font-size: 20px;
+}
+.profile-contents h2 span {
+    display: block;
+    font-size: 12px;
+}
+.profile-contents p {
+    color: black;
+    font-size: 9px;
+    min-width: 100px;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: all .4s;
+    opacity: 1;
+}
+.team-item:hover .profile-contents p {
+    opacity: 1;
+    max-height: 15em;
+    margin-top: 0.2em;
+}
