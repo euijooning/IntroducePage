@@ -24,7 +24,7 @@
 ## 시연 영상(Youtube 링크)
 <!-- 이미지를 좌측으로 정렬하고 링크 추가 -->
 <p align="left">
-  <a href="https://www.youtube.com/watch?v=C2Y3pzzz3Aw">
+  <a href="https://youtu.be/4fKEPD1o650">
     <img src="https://github.com/euijooning/IntroducePage/assets/49093239/f9553682-47ed-4560-a5b9-881ada49f272" alt="이미지">
   </a>
 </p>
