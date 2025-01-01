@@ -17,12 +17,14 @@
 🚖 방명록 페이지 <br>
 <br>
 
+🚀 저는 개인 페이지와 메인 페이지의 캐릭터(5인) 부분을 구현하였습니다.
+
 -----
 
 ## 시연 영상(Youtube 링크)
 <!-- 이미지를 좌측으로 정렬하고 링크 추가 -->
 <p align="left">
-  <a href="https://www.youtube.com/watch?v=CUrdldgn4uA">
+  <a href="https://youtu.be/n0MPwYEK_Fo">
     <img src="https://github.com/euijooning/IntroducePage/assets/49093239/f9553682-47ed-4560-a5b9-881ada49f272" alt="이미지">
   </a>
 </p>
